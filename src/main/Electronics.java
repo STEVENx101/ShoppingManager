@@ -1,37 +1,42 @@
 package main;
 
+// This class represents an electronics product, which is a specific type of product.
 public class Electronics extends Product {
-    private String brand;
-    private String warranty;
+    private String brand;        
+    private String warranty;     
 
-    // Constructor
-    public Electronics(String productId, String name, double price, String brand, String warranty ) {
-        super(productId, name, "Electronics", price);
+   
+
+    //  constructor to initialize an electronics product with specified attributes.
+    
+    public Electronics(String productId, String name, double price, int availableItems, String brand, String warranty) {
+        // Call the constructor of the superclass (Product) to set common attributes
+        super(productId, name, "Electronics", price, availableItems);
         this.brand = brand;
         this.warranty = warranty;
     }
 
-    // Getter methods for Electronics-specific attributes
+    // Getter methods
+
+    // Get the brand of the electronics product
     public String getBrand() {
         return brand;
     }
 
+    // Get the warranty period of the electronics product
     public String getWarranty() {
         return warranty;
     }
 
+    // Setter methods
 
-    
+    // Set the brand of the electronics product
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 
-    // Override toString() method for better printing in your application
-    @Override
-    public String toString() {
-        return "Electronics{" +
-                "productId='" + getProductId() + '\'' +
-                ", name='" + getName() + '\'' +
-                ", price=" + getPrice() +
-                ", brand='" + brand + '\'' +
-                ", warranty='" + warranty + '\'' +
-                '}';
+    // Set the warranty period of the electronics product
+    public void setWarranty(String warranty) {
+        this.warranty = warranty;
     }
 }

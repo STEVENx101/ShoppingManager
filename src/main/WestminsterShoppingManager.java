@@ -71,6 +71,7 @@ public class WestminsterShoppingManager {
 
         System.out.print("Enter product Category (1 for Electronics, 2 for Clothing): ");
         int input = scanner.nextInt();
+        
 
         if (input == 1) {
             addElectronicsProduct(scanner, productId, name);
@@ -79,7 +80,9 @@ public class WestminsterShoppingManager {
         } else {
             System.out.println("Invalid category choice. Please enter 1 for Electronics or 2 for Clothing.");
             return;
+            
         }
+       
     }
 
     private static void addElectronicsProduct(Scanner scanner, String productId, String name) {
@@ -140,6 +143,7 @@ public class WestminsterShoppingManager {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter product ID: ");
         String productId = scanner.next().toUpperCase();
+        
 
         for (Product product : products) {
             if (product.getProductId().equals(productId)) {

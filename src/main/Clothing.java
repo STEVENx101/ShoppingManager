@@ -19,7 +19,16 @@ public class Clothing extends Product {
     public String getColor() {
         return color;
     }
+    
+// Setter methods for Clothing-specific attributes
 
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
     
 
 

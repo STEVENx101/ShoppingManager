@@ -34,7 +34,23 @@ public class Product {
         return price;
     }
 
+    // setter methods
     
+    public void setProductId(String productId) {
+        this.productId = productId;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
 
 
     // Override toString() method for better printing in your application
