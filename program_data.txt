@@ -1,0 +1,33 @@
+----------Products----------
+Product ID: 100G
+Name: pants
+Category: Clothing
+Price: 150.0
+Available Items: 40
+Size: L
+Color: red
+
+Product ID: 300S
+Name: phone
+Category: Electronics
+Price: 12000.0
+Available Items: 12
+Brand: samsung
+Warranty: 3
+
+Product ID: ADV22
+Name: radio
+Category: Electronics
+Price: 200.0
+Available Items: 30
+Brand: 3years
+Warranty: apple
+
+Product ID: DD33
+Name: shirt
+Category: Clothing
+Price: 22.0
+Available Items: 22
+Size: S
+Color: blue
+
